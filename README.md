@@ -1,6 +1,5 @@
-# HelloWorld
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+# HelloWorld: A Compendium Of Computer Programming Languages
+Hello World in a plethora of programming languages from the late 50's to present day.
 
 ## Development server
 
@@ -25,4 +24,20 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Further help
 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+### License
+
+This project is licensed under the MIT License - [license]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+
+Copyright (c) 2017
+
+[license]: https://opensource.org/licenses/MIT
