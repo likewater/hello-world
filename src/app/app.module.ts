@@ -4,15 +4,25 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { AboutComponent } from './about/about.component';
+import { AllLanguagesComponent } from './all-languages/all-languages.component';
+import { routing } from './app.routing';
+import { LanguageDetailComponent } from './language-detail/language-detail.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WelcomeComponent,
+    AboutComponent,
+    AllLanguagesComponent,
+    LanguageDetailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
