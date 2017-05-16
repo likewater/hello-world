@@ -4,7 +4,7 @@
 ## To Run:
 * Install the following:
     * [NPM](https://www.npmjs.com/)
-    * [Angular CLI](https://cli.angular.io/)
+    * [Angular CLI](https://cli.angular.io/) $ npm install -g @angular/cli@1.0.0
     * [Bower](https://bower.io/)
 * Clone this repository from [Git Hub](https://github.com/likewater/hello-world.git)
 * Create a DB using Firebase:
