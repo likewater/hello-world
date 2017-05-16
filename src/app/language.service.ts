@@ -40,4 +40,9 @@ export class LanguageService {
                                 link: localUpdatedLanguage.link});
   }
 
+  deleteLanguage(localLanguageToDelete){
+    var languageEntryInFirebase = this.getLanguageById(localLanguageToDelete.$key);
+    languageEntryInFirebase.remove();
+  }
+
 }

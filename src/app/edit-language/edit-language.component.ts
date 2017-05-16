@@ -20,4 +20,10 @@ export class EditLanguageComponent implements OnInit {
     this.languageService.updateLanguage(languageToUpdate);
   }
 
+  beginDeletingLanguage(languageToDelete){
+    if(confirm("Are you sure you want to delete this item from the inventory?")){
+      this.languageService.deleteLanguage(languageToDelete);
+    }
+  }
+
 }
