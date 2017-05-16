@@ -3,53 +3,52 @@
     <h3 class="panel-title">Add New Language</h3>
   </div>
   <div class="panel-body">
-<div>
-  <div>
-    <label>Language:</label>
-    <br>
-    <input #newLanguage>
-  </div>
+    <div>
+      <div>
+        <label>Language:</label>
+        <br>
+        <input #newLanguage>
+      </div>
 
-  <div>
-    <label>Language Author:</label>
-    <br>
-    <input #newAuthor>
-  </div>
+      <div>
+        <label>Language Author:</label>
+        <br>
+        <input #newAuthor>
+      </div>
 
-  <div>
-    <label>Year Created:</label>
-    <br>
-    <input #newYear>
-  </div>
+      <div>
+        <label>Year Created:</label>
+        <br>
+        <input #newYear>
+      </div>
 
-  <div>
-    <label>Type:</label>
-    <br>
-    <input #newType>
-  </div>
+      <div>
+        <label>Type:</label>
+        <br>
+        <input #newType>
+      </div>
 
-  <div>
-    <label>Code Sample:</label>
-    <br>
-    <input #newCode>
-  </div>
+      <div>
+        <label>Code Sample:</label>
+        <br>
+        <input #newCode>
+      </div>
 
-  <div>
-    <label>Description:</label>
-    <br>
-    <textarea #newDescription></textarea>
-  </div>
+      <div>
+        <label>Description:</label>
+        <br>
+        <textarea #newDescription></textarea>
+      </div>
 
-  <div>
-    <label>Provide A Link:</label>
-    <br>
-    <input #newLink>
+      <div>
+        <label>Provide A Link:</label>
+        <br>
+        <input #newLink>
+      </div>
+      <button (click)="submitForm(newLanguage.value, newAuthor.value, newYear.value, newType.value, newCode.value, newDescription.value, newLink.value)">Add</button>
+    </div>
   </div>
-  <button (click)="submitForm(newLanguage.value, newAuthor.value, newYear.value, newType.value, newCode.value, newDescription.value, newLink.value)">Add</button>
 </div>
-</div>
-</div>
-
 <div>
   <app-all-languages></app-all-languages>
 </div>

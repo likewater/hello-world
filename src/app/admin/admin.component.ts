@@ -8,6 +8,7 @@ import { Language } from '../language.model';
   styleUrls: ['./admin.component.css'],
   providers: [LanguageService]
 })
+
 export class AdminComponent implements OnInit {
 
   constructor(private languageService: LanguageService) { }
@@ -18,7 +19,5 @@ export class AdminComponent implements OnInit {
   submitForm(language: string, author: string, year: number, type: string, code: string, description: string, link: string) {
     var newLanguage: Language = new Language(language, author, year, type, code, description, link);
     this.languageService.addLanguage(newLanguage);
-    // console.log(newLanguage);
   }
-
 }

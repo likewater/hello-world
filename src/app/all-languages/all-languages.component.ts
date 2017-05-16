@@ -10,8 +10,8 @@ import { FirebaseListObservable } from 'angularfire2/database';
   styleUrls: ['./all-languages.component.css'],
   providers: [LanguageService]
 })
+
 export class AllLanguagesComponent implements OnInit {
-  //languages: Language[];
   languages: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
 
@@ -22,8 +22,12 @@ export class AllLanguagesComponent implements OnInit {
   }
 
   goToDetailPage(clickedLanguage) {
-    //  this.router.navigate(['languages', clickedLanguage.id]);
     this.router.navigate(['languages', clickedLanguage.$key]);
-   };
+  };
 
+  filterByType: string = "allLanguages";
+
+  onSelect(optionFromMenu) {
+    this.filterByType = optionFromMenu;
+  }
 }

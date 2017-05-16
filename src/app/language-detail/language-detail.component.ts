@@ -25,12 +25,6 @@ export class LanguageDetailComponent implements OnInit {
      this.languageId = urlParameters['id'];
    });
    this.languageToDisplay = this.languageService.getLanguageById(this.languageId);
-
-
-    // this.route.params.forEach((urlParameters) => {
-    //   this.languageId = parseInt(urlParameters['id']);
-    // });
-    // this.languageToDisplay = this.languageService.getLanguageById(this.languageId);
   }
 
 }

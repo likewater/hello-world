@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-// import { Language } from '../language.model;
 import { LanguageService } from '../language.service';
 
 @Component({
@@ -25,5 +24,4 @@ export class EditLanguageComponent implements OnInit {
       this.languageService.deleteLanguage(languageToDelete);
     }
   }
-
 }

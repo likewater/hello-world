@@ -1,9 +1,21 @@
 # HelloWorld: A Compendium Of Computer Programming Languages
-Hello World in a plethora of programming languages from the late 50's to present day.
+An application to list Programming Languages with sample code that generates "Hello World."
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## To Run:
+* Install the following:
+    * [NPM] (https://www.npmjs.com/)
+    * [Angular CLI] (https://cli.angular.io/)
+    * [Bower] (https://bower.io/)
+* Clone this repository from [Git Hub] (https://github.com/likewater/hello-world.git)
+* Create a DB using Firebase:
+    * Firebase (https://firebase.google.com/)
+    * Name your Firebase DB: "languages"
+    * Import the JSON file: sample-programs.json into your DB
+    * Choose the option "for web" and Firebase will create a key
+* In hello-world create a file: src/app/api-keys.ts
+* Install your DB info as required:
+* ![dbImage](src/images/dblogo.png)
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 

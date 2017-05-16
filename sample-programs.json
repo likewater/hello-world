@@ -3,9 +3,9 @@
     "author": "John McCarthy",
     "year" : 1958,
     "type" : "Functional",
-    "code" : "",
+    "code" : "test",
     "description": "Lisp (historically, LISP) is a family of computer programming languages with a long history and a distinctive, fully parenthesized prefix notation.[3] Originally specified in 1958, Lisp is the second-oldest high-level programming language in widespread use today. Only Fortran is older, by one year.[4][5] Lisp has changed since its early days, and many dialects have existed over its history. Today, the best known general-purpose Lisp dialects are Common Lisp and Scheme.",
-    "link" : "",
+    "link" : "test",
     "id": "1"
     }, {
     "language": "Fortran",
