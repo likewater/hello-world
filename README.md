@@ -1,5 +1,5 @@
 # HelloWorld: A Compendium Of Computer Programming Languages
-An application to list Programming Languages with sample code that generates "Hello World."
+## An application to list Programming Languages with sample code that generates "Hello World."
 
 ## To Run:
 * Install the following:
@@ -14,7 +14,7 @@ An application to list Programming Languages with sample code that generates "He
     * Choose the option "for web" and Firebase will create a key
 * In hello-world create a file: src/app/api-keys.ts
 * Install your DB info as required:
-* ![dbImage](src/images/dbLogo.png)
+![dbImage](src/images/dbLogo.png)
 * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
