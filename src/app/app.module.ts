@@ -15,6 +15,8 @@ import { LanguageDetailComponent } from './language-detail/language-detail.compo
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AdminComponent } from './admin/admin.component';
+import { EditLanguageComponent } from './edit-language/edit-language.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -31,7 +33,9 @@ export const firebaseConfig = {
     WelcomeComponent,
     AboutComponent,
     AllLanguagesComponent,
-    LanguageDetailComponent
+    LanguageDetailComponent,
+    AdminComponent,
+    EditLanguageComponent
   ],
   imports: [
     BrowserModule,

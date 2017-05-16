@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Language } from '../language.model';
 import { LanguageService } from '../language.service';
 import { Router } from '@angular/router';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-all-languages',
@@ -10,7 +11,8 @@ import { Router } from '@angular/router';
   providers: [LanguageService]
 })
 export class AllLanguagesComponent implements OnInit {
-  languages: Language[];
+  //languages: Language[];
+  languages: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private languageService: LanguageService){}
 
@@ -20,10 +22,12 @@ export class AllLanguagesComponent implements OnInit {
   // ]
   ngOnInit() {
     this.languages = this.languageService.getLanguages();
+    console.log(this.router.url);
   }
 
-  goToDetailPage(clickedLanguage: Language) {
-     this.router.navigate(['languages', clickedLanguage.id]);
+  goToDetailPage(clickedLanguage) {
+    //  this.router.navigate(['languages', clickedLanguage.id]);
+    this.router.navigate(['languages', clickedLanguage.$key]);
    };
 
 }

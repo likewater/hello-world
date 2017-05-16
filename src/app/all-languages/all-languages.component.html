@@ -1,5 +1,11 @@
 <h1 class="titleFont">All Languages</h1>
-<div *ngFor="let language of languages" (click)="goToDetailPage(language)" class="panel panel-default">
+<!-- <div *ngFor="let language of languages" (click)="goToDetailPage(language)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{language.language}}</em> by {{language.author}}</h3>
+  </div>
+</div> -->
+
+<div *ngFor="let language of languages | async" (click)="goToDetailPage(language)" class="panel panel-default">
   <div class="panel-body">
     <h3><em>{{language.language}}</em> by {{language.author}}</h3>
   </div>
