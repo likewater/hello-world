@@ -1,3 +1,30 @@
-<p>
-  edit-language works!
-</p>
+<h4>Edit Language</h4>
+
+<label>Edit Langauge:</label>
+<input [(ngModel)]="selectedLanguage.language">
+<br>
+
+<label>Edit Author:</label>
+<input [(ngModel)]="selectedLanguage.author">
+<br>
+
+<label>Edit Year:</label>
+<input [(ngModel)]="selectedLanguage.year">
+<br>
+
+<label>Edit Type:</label>
+<input [(ngModel)]="selectedLanguage.type">
+<br>
+
+<label>Edit Code:</label>
+<input [(ngModel)]="selectedLanguage.code">
+<br>
+
+<label>Edit Description:</label>
+<input [(ngModel)]="selectedLanguage.description">
+<br>
+
+<label>Edit Link:</label>
+<input [(ngModel)]="selectedLanguage.link">
+
+<button (click)="beginUpdatingLanguage(selectedLanguage)">Update</button>

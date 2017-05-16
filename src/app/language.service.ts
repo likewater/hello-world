@@ -29,4 +29,15 @@ export class LanguageService {
     // }
   }
 
+  updateLanguage(localUpdatedLanguage){
+    var languageEntryInFirebase = this.getLanguageById(localUpdatedLanguage.$key);
+    languageEntryInFirebase.update({language: localUpdatedLanguage.language,
+                                author: localUpdatedLanguage.author,
+                                year: localUpdatedLanguage.year,
+                                type: localUpdatedLanguage.type,
+                                code: localUpdatedLanguage.code,
+                                description: localUpdatedLanguage.description,
+                                link: localUpdatedLanguage.link});
+  }
+
 }
