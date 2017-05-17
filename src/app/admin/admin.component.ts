@@ -19,5 +19,6 @@ export class AdminComponent implements OnInit {
   submitForm(language: string, author: string, year: number, type: string, code: string, description: string, link: string) {
     var newLanguage: Language = new Language(language, author, year, type, code, description, link);
     this.languageService.addLanguage(newLanguage);
+    window.location.reload();
   }
 }
