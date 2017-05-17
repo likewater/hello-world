@@ -1,16 +1,18 @@
 <h1 class="titleFont">All Languages</h1>
-<select (change)="onSelect($event.target.value)">
+<select class="selectText" (change)="onSelect($event.target.value)">
       <option value="allLanguages" selected="selected">All Languages</option>
       <option value="functionalLanguages">Functional Languages</option>
       <option value="objectOrientedLanguages">Object Oriented Languages</option>
 </select>
-<div *ngFor="let language of languages | async | type:filterByType"  class="panel panel-default">
-  <div class="panel-body">
-    <h3 (click)="goToDetailPage(language)"><em>{{language.language}}</em> by {{language.author}}</h3>
-    <div *ngIf="currentRoute === '/admin'">
-      {{language.description}}
-      <hr>
-      <app-edit-language [selectedLanguage]="language"></app-edit-language>
+<div class="well">
+  <div *ngFor="let language of languages | async | type:filterByType"  class="panel panel-default">
+    <div class="panel-body">
+      <h3 (click)="goToDetailPage(language)"><em>{{language.language}}</em>, a/an <em>{{language.type}}</em> language created by <em>{{language.author}}</em> in <em>{{language.year}}</em></h3>
+      <div *ngIf="currentRoute === '/admin'">
+        {{language.description}}
+        <hr>
+        <app-edit-language [selectedLanguage]="language"></app-edit-language>
+      </div>
     </div>
   </div>
 </div>

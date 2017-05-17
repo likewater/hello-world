@@ -28,7 +28,6 @@ body{
 .animalImageSmall{
   width: auto;
   height: 120px;
-
 }
 
 .titleFont {
@@ -40,12 +39,22 @@ body{
 	line-height: 26.4px;*/
 }
 
-h2, h1{
-  color: #C63D0F;
+h1{
+  color: #1241F2;
+}
+
+h3{
+  color: #212b31;
 }
 
 p b{
   color: #36454F;
+}
+
+.selectText{
+  color: black;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .period{
@@ -80,15 +89,16 @@ p b{
 }
 
 button{
-  background-color: #CBE6CA;
+  background-color: #CC2217;
   border-radius: 5px;
   border: none;
-  color: #C63D0F;
+  color: #FFFFFF;
 }
 
 .well{
   color: #3B3738;
-  background-color: #FFFFFF;
+  background-color: #FFFAE6;
+  border-color: #7F7D73;
 }
 
 #aboutWell{

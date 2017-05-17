@@ -1,31 +1,52 @@
 <h4>Edit Language</h4>
-
-<label>Edit Langauge:</label>
+<div>
+<label>Edit Language:</label>
+<br>
 <input [(ngModel)]="selectedLanguage.language">
+</div>
 <br>
 
+<div>
 <label>Edit Author:</label>
+<br>
 <input [(ngModel)]="selectedLanguage.author">
+</div>
 <br>
 
+<div>
 <label>Edit Year:</label>
+<br>
 <input [(ngModel)]="selectedLanguage.year">
+</div>
 <br>
 
+<div>
 <label>Edit Type:</label>
+<br>
 <input [(ngModel)]="selectedLanguage.type">
+</div>
 <br>
 
+<div>
 <label>Edit Code:</label>
+<br>
 <input [(ngModel)]="selectedLanguage.code">
+</div>
 <br>
 
+<div>
 <label>Edit Description:</label>
-<input [(ngModel)]="selectedLanguage.description">
+<br>
+<textarea [(ngModel)]="selectedLanguage.description"></textarea>
+</div>
 <br>
 
+<div>
 <label>Edit Link:</label>
+<br>
 <input [(ngModel)]="selectedLanguage.link">
+</div>
+<br>
 
 <button (click)="beginUpdatingLanguage(selectedLanguage)">Update</button>
 <hr>

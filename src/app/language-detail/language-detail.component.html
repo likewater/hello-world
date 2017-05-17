@@ -1,4 +1,7 @@
-<h2>This language has id number: {{languageId}}</h2>
-<h3>{{(languageToDisplay| async)?.language}}</h3>
-<h3>{{(languageToDisplay| async)?.author}}</h3>
-<h3>{{(languageToDisplay| async)?.year}}</h3>
+<div class="well">
+  <h2>{{(languageToDisplay| async)?.language}}</h2>
+  <h3>Created by {{(languageToDisplay| async)?.author}} in {{(languageToDisplay| async)?.year}}</h3>
+  <h4>{{(languageToDisplay| async)?.description}}</h4>
+  <img src="{{(languageToDisplay| async)?.code}}" alt="Hello World in {{(languageToDisplay| async)?.language}}">
+  <h4><a href="{{(languageToDisplay| async)?.link}}">More information about {{(languageToDisplay| async)?.language}}</a></h4>
+</div>

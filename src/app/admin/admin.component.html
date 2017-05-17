@@ -1,54 +1,58 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">Add New Language</h3>
+    <h3>Add A New Programming Language</h3>
   </div>
-  <div class="panel-body">
-    <div>
+  <div class="well">
+    <div class="selectText">
       <div>
         <label>Language:</label>
         <br>
         <input #newLanguage>
-      </div>
+      </div><br>
 
       <div>
         <label>Language Author:</label>
         <br>
         <input #newAuthor>
-      </div>
+      </div><br>
 
       <div>
         <label>Year Created:</label>
         <br>
         <input #newYear>
-      </div>
+      </div><br>
 
       <div>
-        <label>Type:</label>
+        <label>Type: Functional or Object Oriented</label>
         <br>
         <input #newType>
-      </div>
+      </div><br>
 
       <div>
         <label>Code Sample:</label>
         <br>
-        <input #newCode>
-      </div>
+        <textarea #newCode></textarea>
+      </div><br>
 
       <div>
         <label>Description:</label>
         <br>
         <textarea #newDescription></textarea>
-      </div>
+      </div><br>
 
       <div>
         <label>Provide A Link:</label>
         <br>
         <input #newLink>
-      </div>
+      </div><br>
       <button (click)="submitForm(newLanguage.value, newAuthor.value, newYear.value, newType.value, newCode.value, newDescription.value, newLink.value)">Add</button>
     </div>
   </div>
 </div>
 <div>
-  <app-all-languages></app-all-languages>
+  <div class="well">
+    <div class="selectText">
+      <app-all-languages></app-all-languages>
+    </div>
+  </div>
 </div>
